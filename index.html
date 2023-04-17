@@ -1,0 +1,160 @@
+<html>
+    <head>   
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="index.css" media="all" />
+        <script type = "text/javascript" src = "index.js" ></script>
+        <title>Student Performance Prediction</title>
+    </head>
+    <body>
+        
+        <div class="background">
+            <div class="layer"> 
+                      <div class="myNav">
+                          <div class="logo">
+                                <h3>Student Performance Predictor </h3>
+                          </div>
+                          <div class="items">
+                                <ul id="menu">
+                                        <li id="menu" onClick='showAttributesUsed()'>Attributes used</li>
+                                        <li id="menu" onclick="showDataVisualisation()">Data Visualisation</li>
+                                        <li id="menu" onclick="showFeatureExtraction()">Feature Extraction</li>
+                                        <li id="menu" onClick="showAlgorithmsUsed()">Algorithms used</li>
+                                        <li id="menu" onClick="showPrediction()">Prediction</li>
+                                    </ul>
+                          </div>
+                      </div>
+
+                      <div class='attributesUsed' id='attributesUsed'>
+                        <h2>Attributes Used</h2>
+                        <ol>
+                            <li>College - Student's college</li>
+                            <li>sex - student's sex (binary: 'F' - female or 'M' - male)</li>
+                            <li>age - student's age (numeric: from 15 to 22)</li>
+                            <li>address - student's home address type (binary: 'U' - urban or 'R' - rural)</li>
+                            <li>famsize - family size (binary: 'LE3' - less or equal to 3 or 'GT3' - greater than 3)</li>
+                            <li>Pstatus - parent's cohabitation status (binary: 'T' - living together or 'A' - apart)</li>
+                            <li>Medu - mother's education (numeric: 0 - none, 1 - primary education (4th grade), 2 â€“ 5th to 9th grade, 3 â€“ secondary education or 4 â€“ higher education)</li>
+                            <li>Fedu - father's education (numeric: 0 - none, 1 - primary education (4th grade), 2 â€“ 5th to 9th grade, 3 â€“ secondary education or 4 â€“ higher education)</li>
+                            <li>Mjob - mother's job (nominal: 'teacher', 'health' care related, civil 'services' (e.g. administrative or police), 'at_home' or 'other')</li>
+                            <li>Fjob - father's job (nominal: 'teacher', 'health' care related, civil 'services' (e.g. administrative or police), 'at_home' or 'other')</li>
+                            <li>reason - reason to choose this college (nominal: close to 'home', college 'reputation', 'course' preference or 'other')  </li>
+                            <li>guardian - student's guardian (nominal: 'mother', 'father' or 'other')</li>
+                            <li>traveltime - home to college travel time (numeric: 1 - <15 min., 2 - 15 to 30 min., 3 - 30 min. to 1 hour, or 4 - >1 hour)</li>
+                            <li>studytime - weekly study time (numeric: 1 - <2 hours, 2 - 2 to 5 hours, 3 - 5 to 10 hours, or 4 - >10 hours)</li>
+                            <li>failures - number of past class failures (numeric: n if 1<=n<3, else 4)</li>
+                            <li>collegesup - extra educational support (binary: yes or no)</li>
+                            <li>famsup - family educational support (binary: yes or no)</li>
+                            <li>paid - extra paid classes within the course subject (Math or Portuguese) (binary: yes or no)</li>
+                            <li>activities - extra-curricular activities (binary: yes or no)</li>
+                            <li>cet - entrance through cet or not (binary: yes or no)</li>
+                            <li>higher - wants to take higher education (binary: yes or no)</li>
+                            <li>internet - Internet access at home (binary: yes or no)</li>
+                            <li>romantic - with a romantic relationship (binary: yes or no)</li>
+                            <li>famrel - quality of family relationships (numeric: from 1 - very bad to 5 - excellent)</li>
+                            <li>freetime - free time after college (numeric: from 1 - very low to 5 - very high)</li>
+                            <li>goout - going out with friends (numeric: from 1 - very low to 5 - very high)</li>
+                            <li>Dalc - workday alcohol consumption (numeric: from 1 - very low to 5 - very high)</li>
+                            <li>Walc - weekend alcohol consumption (numeric: from 1 - very low to 5 - very high)</li>
+                            <li>health - current health status (numeric: from 1 - very bad to 5 - very good)</li>
+                            <li>absences - number of college absences (numeric: from 0 to 93)</li>
+                            <li>G1 - first period grade (numeric: from 0 to 20)</li>
+                            <li>G2 - second period grade (numeric: from 0 to 20)</li>
+                            <li>G3 - final grade (numeric: from 0 to 20, output target)</li>
+
+
+                        </ol>
+                      </div>
+                      <div class="dataVisualisation" id="dataVisualisation">
+                            <h2>Data Visualisation</h2>
+                            <p>
+                                    Data visualization is the graphical representation of information and data. By using visual elements like charts, graphs, and maps, data visualization tools provide an accessible way to see and understand trends, outliers, and patterns in data.
+
+                                    In the world of Big Data, data visualization tools and technologies are essential to analyze massive amounts of information and make data-driven decisions.
+                            </p>
+                            <div class='images'>
+                                <img src='./assets/dataVisualisation/college_dist.png' alt="College Distribution"/>
+                                <img src='./assets/dataVisualisation/gender_dist.png' alt="College Distribution"/>
+                                <img src='./assets/dataVisualisation/age_dist.png' alt="College Distribution"/>
+                                <img src='./assets/dataVisualisation/address_dist.png' alt="College Distribution"/>
+                                <img src='./assets/dataVisualisation/family_dist.png' alt="College Distribution"/>
+                                <img src='./assets/dataVisualisation/p_status_dist.png' alt="College Distribution"/>
+                                <img src='./assets/dataVisualisation/m_edu.png' alt="College Distribution"/>
+                                <img src='./assets/dataVisualisation/f_edu.png' alt="College Distribution"/>
+                                <img src='./assets/dataVisualisation/m_job.png' alt="College Distribution"/>
+                                <img src='./assets/dataVisualisation/f_job.png' alt="College Distribution"/>
+                                <img src='./assets/dataVisualisation/reason.png' alt="College Distribution"/>
+                                <img src='./assets/dataVisualisation/guardian.png' alt="College Distribution"/>
+                                <img src='./assets/dataVisualisation/travel_time.png' alt="College Distribution"/>
+                                <img src='./assets/dataVisualisation/study_time.png' alt="College Distribution"/>
+                                <img src='./assets/dataVisualisation/failures.png' alt="College Distribution"/>
+                                <img src='./assets/dataVisualisation/college_supp.png' alt="College Distribution"/>
+                                <img src='./assets/dataVisualisation/fam_supp.png' alt="College Distribution"/>
+                                <img src='./assets/dataVisualisation/extra_paid_class.png' alt="College Distribution"/>
+                                <img src='./assets/dataVisualisation/extra_curr_act.png' alt="College Distribution"/>
+                                <img src='./assets/dataVisualisation/through_cet.png' alt="College Distribution"/>
+                                <img src='./assets/dataVisualisation/higher_edu.png' alt="College Distribution"/>
+                                <img src='./assets/dataVisualisation/net_access.png' alt="College Distribution"/>
+                                <img src='./assets/dataVisualisation/rom_rship.png' alt="College Distribution"/>
+                                <img src='./assets/dataVisualisation/fam_rship.png' alt="College Distribution"/>
+                                <img src='./assets/dataVisualisation/free_time.png' alt="College Distribution"/>
+                                <img src='./assets/dataVisualisation/going_out.png' alt="College Distribution"/>
+                                <img src='./assets/dataVisualisation/alc_consumption.png' alt="College Distribution"/>
+                                <img src='./assets/dataVisualisation/alc_consumption.png' alt="College Distribution"/>
+                            </div>
+                      </div>
+                      <div class="featureExtraction" id="featureExtraction">
+                            <h2>Feature Extraction</h2>
+                            <p>In machine learning, pattern recognition and in image processing, feature extraction starts from an initial set of measured data and builds derived values (features) intended to be informative and non-redundant, facilitating the subsequent learning and generalization steps, and in some cases leading to better human interpretations. Feature extraction is a dimensionality reduction process, where an initial set of raw variables is reduced to more manageable groups (features) for processing, while still accurately and completely describing the original data set.
+
+                                    When the input data to an algorithm is too large to be processed and it is suspected to be redundant (e.g. the same measurement in both feet and meters, or the repetitiveness of images presented as pixels), then it can be transformed into a reduced set of features (also named a feature vector). Determining a subset of the initial features is called feature selection. The selected features are expected to contain the relevant information from the input data, so that the desired task can be performed by using this reduced representation instead of the complete initial data.</p>
+                            <h2>Correlation Matrix</h2>
+                            <p>A correlation matrix is a table showing correlation coefficients between variables. Each cell in the table shows the correlation between two variables. A correlation matrix is used as a way to summarize data, as an input into a more advanced analysis, and as a diagnostic for advanced analyses.</p>
+                      </div>
+                      <div class="algorithmsUsed" id="algorithmsUsed">
+                            <h2>Algorithms Used</h2>
+
+                      </div>
+                      <div class='prediction' id='prediction'>
+                            <form >
+                               College: <input type="text" name="fname"  ><br>
+                               Sex:     <input type="text" name="lname"><br>
+                               age:     <input type="text" name="lname"><br>
+                               address: <input type="text" name="lname"><br>
+                               famsize: <input type="text" name="lname"><br>
+                               Pstatus: <input type="text" name="lname"><br>
+                               Medu:    <input type="text" name="lname"><br>
+                               Fedu:    <input type="text" name="lname"><br>
+                               Mjob:    <input type="text" name="lname"><br>
+                               Fjob:    <input type="text" name="lname"><br>
+                               reason:  <input type="text" name="lname"><br>
+                               guardian:<input type="text" name="lname"><br>
+                               traveltime:  <input type="text" name="lname"><br>
+                               studytime:  <input type="text" name="lname"><br>
+                               failures:  <input type="text" name="lname"><br>
+                               collegesup:  <input type="text" name="lname"><br>
+                               paid:  <input type="text" name="lname"><br
+                               activities:  <input type="text" name="lname"><br>
+                               cet:  <input type="text" name="lname"><br>
+                               higher:  <input type="text" name="lname"><br>
+                               internet:  <input type="text" name="lname"><br>
+                               romantic : <input type="text" name="lname"><br>
+                               famrel:  <input type="text" name="lname"><br>
+                               freetime:  <input type="text" name="lname"><br>
+                               goout:  <input type="text" name="lname"><br>
+                               Dalc:  <input type="text" name="lname"><br>
+                               Walc:  <input type="text" name="lname"><br>
+                               health:  <input type="text" name="lname"><br>
+                               absences:  <input type="text" name="lname"><br>
+                               G1:  <input type="text" name="lname"><br>
+                               G2:  <input type="text" name="lname"><br>
+                               G3:  <input type="text" name="lname"><br>
+                               <input type="button" onclick="myFunction()" value="Submit" style="background-color: white;" >
+                              </form>
+                      </div>
+            </div>
+        </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

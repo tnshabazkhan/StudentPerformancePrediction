@@ -1,0 +1,103 @@
+body{
+    color: white;
+}
+.background{
+    background-image: url("http://clipart-library.com/images/kc8589xri.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    margin:0px;
+    padding: 0px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.layer{
+  background-color: rgba(0, 0, 0, 0.6);
+  position: relative;
+  background-size: cover;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+h3{
+    margin-right: auto !important;  
+    color: rgb(19, 30, 184);
+    padding: 13px;
+    width: 500px;
+}
+h2{
+    color: white;  
+    float: left;
+    width: 99%;
+    margin-bottom: 20px;
+}
+p{
+    color: white;
+    font-size: 18px;
+}
+
+.nav{
+    margin-left: auto !important;
+}
+.myNav{
+    background-color:rgb(241, 241, 241);
+    height: 60px;
+}
+#menu ul{
+    list-style: none;
+    display: inline;
+}
+#menu li{
+    position: relative;
+    top: 15px;
+    display: inline;
+    cursor: pointer;
+    padding: 12px;
+    background-color: rgba(121, 121, 79, 0);
+    font-size: 18px;
+    color: rgb(24, 26, 26);    
+}
+#menu li:hover{
+    color: rgb(20, 82, 161);
+}
+
+.logo{
+    width: 500px;
+    float: left;
+}
+.items{
+}
+.dataVisualisation{
+    margin: 20px; 
+    display: none;
+}
+.featureExtraction{
+    margin: 20px; 
+    display: none;
+}
+.algorithmsUsed{
+    margin: 20px; 
+    display: none;
+}
+.attributesUsed{
+    margin: 20px; 
+    display: none;
+}
+.prediction{
+    margin: 20px; 
+    display: none;
+}
+img{
+    margin-left: 70px;
+    margin-bottom: 40px;
+    margin-top: 15px;
+}
+li{
+    color: white;
+    margin-bottom: 10px;
+}
+input{
+    color: black;
+}
